@@ -1,0 +1,252 @@
+/**
+ * @author [Harish C Jingade]
+ * @email [justdoitnowharish@gmail.com]
+ * @create date 2019-12-27 18:37:17
+ * @modify date 2019-12-27 18:37:17
+ * @desc [DataKapt Project]
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rightContainer {
+    width: 50%;
+    background-color: #F9F9F9;
+    display: inline-block;
+}
+
+.leftContainer {
+    width: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    position: absolute;
+}
+
+.logoContainer {
+    margin: 30px;
+}
+
+.logoImage {
+    width: 360px;
+}
+
+.themeIconContainer {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    animation-name: ThemeContainerAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ThemeContainerAnimation {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.themeIconImage {
+    width: 620px;
+}
+
+.memberIconCntr,
+.memberIcon {
+    display: none;
+}
+
+.welcomeText {
+    font-family: Futura;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.formContainer {
+    margin-top: 160px;
+}
+
+.emailContainer,
+.passContainer,
+.mobileContainer {
+    width: 440px;
+    height: 40px;
+    margin: 10px;
+    outline: none;
+    font-size: 16px;
+    padding: 6px;
+    border: 0;
+    border-bottom: 1px solid #7A7777;
+    ;
+}
+
+.emailContainer::placeholder,
+.passContainer::placeholder,
+.mobileContainer::placeholder {
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32px;
+    color: #7A7777;
+}
+
+.fortgotPasswordTxt {
+    position: relative;
+    right: 110px;
+    top: 30px;
+    font-size: 12px;
+    font-family: Arial;
+    color: #7A7777;
+}
+
+.orTxt {
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 30px;
+    width: 410px;
+}
+
+.rememberCntr {
+    margin-left: 10px;
+}
+
+.rememberMeTxt {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7A7777;
+}
+
+.loginBtn {
+    width: 166px;
+    color: #ffffff;
+    margin-top: 38px;
+    padding: 15px;
+    text-align: center;
+    background: #00AFEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background: rgb(39, 180, 231);
+}
+
+.otherOptionCntr {
+    margin-top: 30px;
+}
+
+.loginWithTxt {
+    font-family: Arial;
+    font-size: 18px;
+    color: #00AFEF;
+}
+
+.fbLogo {
+    width: 20px;
+    margin: 10px;
+}
+
+.googleLogo {
+    width: 44px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .rightContainer {
+        display: none;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .memberIconCntr {
+        display: block;
+        background-color: #00AFEF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 47px;
+        height: 47px;
+    }
+
+    .memberIcon {
+        display: block;
+        padding: 10px;
+    }
+
+    .welcomeTextContainer {
+        margin-top: 30px;
+    }
+
+    .welcomeText {
+        font-size: 24px;
+    }
+
+    .formContainer {
+        margin-top: 32px;
+    }
+
+    .emailContainer,
+    .passContainer,
+    .mobileContainer {
+        width: 240px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .emailContainer::placeholder,
+    .passContainer::placeholder,
+    .mobileContainer::placeholder {
+        font-size: 12px;
+    }
+
+    .fortgotPasswordTxt {
+        left: 140px;
+        top: 0px;
+    }
+
+    .orTxt {
+        margin: 20px;
+        width: 210px;
+    }
+
+    .rememberCntr {
+        margin: 0;
+    }
+
+    .loginBtn {
+        width: 120px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .loginWithTxt {
+        font-size: 14px;
+    }
+
+    .fbLogo {
+        width: 19px;
+    }
+
+    .googleLogo {
+        width: 38px;
+    }
+}
